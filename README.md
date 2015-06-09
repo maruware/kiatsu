@@ -4,8 +4,7 @@ kiatsu
 Kiatsu can show you pressure value.
 
 
-Usage
-=========
+## Usage
 
 ```
 $ kiatsu
@@ -19,4 +18,9 @@ $ kiatsu
 $ kiatsu --reset
 $ kiatsu
 1001hPa@Tokyo
+```
+## Install
+
+```
+$ go get github.com/maruware/kiatsu
 ```
