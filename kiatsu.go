@@ -13,8 +13,11 @@ import (
 )
 
 func FetchApi(place string) (pressure int) {
+	apiKey := os.Getenv("OPEN_WEATHER_MAP_API_KEY")
+
 	query := url.Values{}
 	query.Add("q", place)
+	query.Add("APPID", apiKey)
 
 	res, err := http.Get("http://api.openweathermap.org/data/2.5/weather" + "?" + query.Encode())
 	if err != nil {

@@ -6,6 +6,16 @@ Kiatsu can show you pressure value.
 
 ## Usage
 
+### Requirements
+
+Regist OpenWeatherMap. And set api key to env
+
+```
+export OPEN_WEATHER_MAP_API_KEY=1111111111
+```
+
+### Execution
+
 ```
 $ kiatsu
 1001hPa@Tokyo
@@ -19,6 +29,7 @@ $ kiatsu --reset
 $ kiatsu
 1001hPa@Tokyo
 ```
+
 ## Install
 
 ```
